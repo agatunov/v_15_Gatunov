@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComentActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="413dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="#5177FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onClickCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:srcCompat="@drawable/addfriend"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/camera" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="82dp"
+        android:text="@string/status"
+        android:textColor=" #4D4242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/appName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/appName"
+        android:textColor=" #4D4242"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar2"
+        android:contentDescription="@string/avatar1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/name"
+        android:textColor="#2E2D2D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/age"
+        android:textColor=" #4D4242"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/statusico"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/online"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:letterSpacing="0.1"
+        android:text="@string/statusasd"
+        android:textColor=" #4D4242"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="312dp"
+        android:layout_height="349dp"
+        android:layout_marginTop="28dp"
+        android:background="#80EAE8E8"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/message"
+        android:textColor="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        android:importantForAutofill="no" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:srcCompat="@drawable/sendbtn"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/sendMess" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/send"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:srcCompat="@drawable/addfriend"
+        android:contentDescription="@string/addfriend2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:srcCompat="@drawable/addfriendbtn"
+        android:contentDescription="@string/addfriend" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:srcCompat="@drawable/camerabtn"
+        android:contentDescription="@string/camera2" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="413dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:background="#5177FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            app:srcCompat="@drawable/icon_news"
+            android:contentDescription="@string/news" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="110dp"
+            app:srcCompat="@drawable/icon_chat"
+            android:contentDescription="@string/chat" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="190dp"
+            app:srcCompat="@drawable/icon_house"
+            android:contentDescription="@string/chat1" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="270dp"
+            app:srcCompat="@drawable/icon_heart"
+            android:contentDescription="@string/like" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="30dp"
+            app:srcCompat="@drawable/avatar3"
+            android:contentDescription="@string/profile" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
